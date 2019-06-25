@@ -14,16 +14,42 @@
 .sidemenu_container {
   grid-row: auto;
   grid-column: 1/2;
-  background-color: chocolate;
+  background-color: rgb(145, 143, 143);
+  z-index: 10;
+  border-right: solid black;
 }
 .main_container {
   grid-row: 2/3;
   grid-column: 2/3;
-  background-color: gold;
+  /* background-color: gold; */
 }
 
 .header_title {
   position: relative;
   color: red;
   font-size: 40px;
+}
+
+.tab_item {
+  width: 180px;
+  height: 50px;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.7;
+}
+.tab_item_onlick {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+button {
+  outline: none;
 }
